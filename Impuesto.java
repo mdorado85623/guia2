@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Impuesto
 {
     public static void main(String[] args){
-     double cam, aut, pbca, pbau;
+        double cam, aut, pbca, pbau;
 
         double ic=0, nc, iau=0, nau;
 
