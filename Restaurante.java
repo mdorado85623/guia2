@@ -23,35 +23,35 @@ public class Restaurante
 
         
 
-        Scanner Teclado = new Scanner (System.in);
+        Scanner teclado = new Scanner (System.in);
 
         
 
-        System.out.println("Hola, ¿que deseas comer?");
+        System.out.println("Bienvenido, ¿que desea ordenar?");
 
-        System.out.println("Selecciona 1 para comida vegetarianas, 2 para comidas no vegetarianas y 3 para comidas rápidas");
+        System.out.println("Si desea comida vegetariana digite 1, Para comida no vegetariana digite 2 o para Comida rápida digite 3");
 
-        tc = Teclado.nextInt();
+        tc = teclado.nextInt();
 
         
 
         if (tc == 1) {
 
-            System.out.println("Usted ha seleccionado comida vegetariana");
+            System.out.println("Ha seleccionado comida vegetariana!");
 
-            System.out.println("Selecciona 1 para sopas de vegetales, 2 para ensaladas y 3 para jugos");
+            System.out.println("Para Sopas de vegetales digite 1, para Ensaladas digite 2 o Para Jugos digite 3");
 
-            tveg = Teclado.nextInt();
+            tveg = teclado.nextInt();
 
             desc = 0.80;
 
             if (tveg == 1) {
 
-               System.out.println("Usted ha seleccionado sopas de vegetales");
+               System.out.println("Ha seleccionado sopa de vegetales!");
 
-               System.out.println("Cuantos platos desea comer");
+               System.out.println("¿Cuantas sopas desea?");
 
-               cp = Teclado.nextInt();
+               cp = teclado.nextInt();
 
                subt = cp*sv;
 
@@ -63,25 +63,25 @@ public class Restaurante
 
                
 
-               System.out.println("Su cuenta es:");
+               System.out.println("El detalle de su cuenta es:");
 
-               System.out.println("Subtotal = " + subt + " CoP");
+               System.out.println("Sub-total = " + subt + " Pesos");
 
-               System.out.println("Iva (19%) = " + imp + " CoP");
+               System.out.println("Impuesto (Iva 19%) = " + imp + " Pesos");
 
-               System.out.println("Precio total = " + tot + " CoP");
+               System.out.println("Precio total = " + tot + " Pesos");
 
-               System.out.println("Su descuento es 20% = " + tot*0.20 + " CoP");
+               System.out.println("Descuento por su elección del 20% = " + tot*0.20 + " Pesos");
 
-               System.out.println("El valor neto a pagar es = " + net + " CoP");
+               System.out.println("Gran total a pagar = " + net + " Pesos");
 
             } else if (tveg == 2) {
 
-               System.out.println("Usted ha seleccionado ensaladas");
+               System.out.println("Ha seleccionado ensaladas!");
 
-               System.out.println("Cuantos platos desea comer");
+               System.out.println("¿Cuantas ensaladas desea?");
 
-               cp = Teclado.nextInt();
+               cp = teclado.nextInt();
 
                subt = cp*ens;
 
@@ -93,25 +93,25 @@ public class Restaurante
 
                
 
-               System.out.println("Su cuenta es:");
+               System.out.println("El detalle de su cuenta es:");
 
-               System.out.println("Subtotal = " + subt + " CoP");
+               System.out.println("Sub-total = " + subt + " Pesos");
 
-               System.out.println("Iva (19%) = " + imp + " CoP");
+               System.out.println("Impuesto (Iva 19%) = " + imp + " Pesos");
 
-               System.out.println("Precio total = " + tot + " CoP");
+               System.out.println("Precio total = " + tot + " Pesos");
 
-               System.out.println("Su descuento es 20% = " + tot*0.20 + " CoP");
+               System.out.println("Descuento por su elección del 20% = " + tot*0.20 + " Pesos");
 
-               System.out.println("El valor neto a pagar es = " + net + " CoP");
+               System.out.println("Gran total a pagar = " + net + " Pesos");
 
             } else if (tveg == 3) {
 
-               System.out.println("Usted ha seleccionado jugos");
+               System.out.println("Ha seleccionado jugos");
 
-               System.out.println("Cuantos jugos desea tomar");
+               System.out.println("¿Cuantos jugos desea?");
 
-               cp = Teclado.nextInt();
+               cp = teclado.nextInt();
 
                subt = cp*jug;
 
@@ -123,21 +123,21 @@ public class Restaurante
 
                
 
-               System.out.println("Su cuenta es:");
+               System.out.println("El detalle de su cuenta es:");
 
-               System.out.println("Subtotal = " + subt + " CoP");
+               System.out.println("Sub-total = " + subt + " Pesos");
 
-               System.out.println("Iva (19%) = " + imp + " CoP");
+               System.out.println("Impuesto (Iva 19%) = " + imp + " Pesos");
 
-               System.out.println("Precio total = " + tot + " CoP");
+               System.out.println("Precio total = " + tot + " Pesos");
 
-               System.out.println("Su descuento es 20% = " + tot*0.20 + " CoP");
+               System.out.println("Descuento por su elección del 20% = " + tot*0.20 + " Pesos");
 
-               System.out.println("El valor neto a pagar es = " + net + " CoP");
+               System.out.println("Gran total a pagar = " + net + " Pesos");
 
             } else {
 
-               System.out.println("No tenemos ese plato");
+               System.out.println("Por favor seleccione unicamente de las opciones dadas!");
 
             }
 
@@ -147,21 +147,21 @@ public class Restaurante
 
         if (tc == 2) {
 
-            System.out.println("Usted ha seleccionado comida no vegetariana");
+            System.out.println("Ha seleccionado comida no vegetariana!");
 
-            System.out.println("Selecciona 1 para bandeja de carne y 2 para bandeja de pollo");
+            System.out.println("Bandeja de carne digite 1 o Bandeja de pollo digite 2");
 
-            tnoveg = Teclado.nextInt();
+            tnoveg = teclado.nextInt();
 
             desc = 0.90;
 
             if (tnoveg == 1) {
 
-               System.out.println("Usted ha seleccionado bandeja de carne");
+               System.out.println("Ha seleccionado bandeja de carne!");
 
-               System.out.println("Cuantos platos desea comer");
+               System.out.println("¿Cuantas bandejas de carne desea?");
 
-               cp = Teclado.nextInt();
+               cp = teclado.nextInt();
 
                subt = cp*bc;
 
@@ -173,25 +173,25 @@ public class Restaurante
 
                
 
-               System.out.println("Su cuenta es:");
+               System.out.println("El detalle de su cuenta es:");
 
-               System.out.println("Subtotal = " + subt + " CoP");
+               System.out.println("Sub-total = " + subt + " Pesos");
 
-               System.out.println("Iva (19%) = " + imp + " CoP");
+               System.out.println("Impuesto (Iva 19%) = " + imp + " Pesos");
 
-               System.out.println("Precio total = " + tot + " CoP");
+               System.out.println("Precio total = " + tot + " Pesos");
 
-               System.out.println("Su descuento es 10% = " + tot*0.10 + " CoP");
+               System.out.println("Descuento por su elección del 10% = " + tot*0.10 + " Pesos");
 
-               System.out.println("El valor neto a pagar es = " + net + " CoP");
+               System.out.println("Gran total a pagar = " + net + " Pesos");
 
             } else if (tnoveg == 2) {
 
-               System.out.println("Usted ha seleccionado bandeja de pollo");
+               System.out.println("Ha seleccionado bandeja de pollo!");
 
-               System.out.println("Cuantos platos desea comer");
+               System.out.println("¿Cuantas bandejas de pollo desea?");
 
-               cp = Teclado.nextInt();
+               cp = teclado.nextInt();
 
                subt = cp*bp;
 
@@ -203,21 +203,21 @@ public class Restaurante
 
                
 
-               System.out.println("Su cuenta es:");
+               System.out.println("El detalle de su cuenta es:");
 
-               System.out.println("Subtotal = " + subt + " CoP");
+               System.out.println("Sub-total = " + subt + " Pesos");
 
-               System.out.println("Iva (19%) = " + imp + " CoP");
+               System.out.println("Impuesto (Iva 19%) = " + imp + " Pesos");
 
-               System.out.println("Precio total = " + tot + " CoP");
+               System.out.println("Precio total = " + tot + " Pesos");
 
-               System.out.println("Su descuento es 10% = " + tot*0.10 + " CoP");
+               System.out.println("Descuento por su elección del 10% = " + tot*0.10 + " Pesos");
 
-               System.out.println("El valor neto a pagar es = " + net + " CoP");
+               System.out.println("Gran total a pagar = " + net + " Pesos");
 
             } else {
 
-               System.out.println("No tenemos ese plato");
+               System.out.println("Por favor seleccione unicamente de las opciones dadas!");
 
             }
 
@@ -227,21 +227,21 @@ public class Restaurante
 
         if (tc == 3) {
 
-            System.out.println("Usted ha seleccionado comida rápidas");
+            System.out.println("Ha seleccionado comida rápida!");
 
-            System.out.println("Selecciona 1 para  perros calientes y 2 para hamburguesas");
+            System.out.println("Para perro caliente digite 1 o para hamburguesas digite 2");
 
-            trap = Teclado.nextInt();
+            trap = teclado.nextInt();
 
             desc = 1;
 
             if (trap == 1) {
 
-               System.out.println("Usted ha seleccionado perros calientes");
+               System.out.println("Ha seleccionado perro caliente!");
 
-               System.out.println("Cuantos platos desea comer");
+               System.out.println("¿Cuantos perros caliente desea?");
 
-               cp = Teclado.nextInt();
+               cp = teclado.nextInt();
 
                subt = cp*pc;
 
@@ -253,27 +253,26 @@ public class Restaurante
 
                
 
-               System.out.println("Su cuenta es:");
+               System.out.println("El detalle de su cuenta es:");
 
-               System.out.println("Subtotal = " + subt + " CoP");
+               System.out.println("Sub-total = " + subt + " Pesos");
 
-               System.out.println("Iva (19%) = " + imp + " CoP");
+               System.out.println("Impuesto (Iva 19%) = " + imp + " Pesos");
 
-               System.out.println("Precio total = " + tot + " CoP");
+               System.out.println("Precio total = " + tot + " Pesos");
 
-               System.out.println("Su descuento es 0% = " + tot*1 + " CoP");
+               System.out.println("Descuento por su elección del 0% = " + tot*1 + " Pesos");
 
-               System.out.println("El valor neto a pagar es = " + net + " CoP");
+               System.out.println("Gran total a pagar = " + net + " Pesos");
 
-               System.out.println("No tienes descuento, comete una ensalada");
-
+               
             } else if (trap == 2) {
 
-               System.out.println("Usted ha seleccionado bandeja de pollo");
+               System.out.println("Ha seleccionado hamburguesa!");
 
-               System.out.println("Cuantos platos desea comer");
+               System.out.println("¿Cuantas hamburguesas desea?");
 
-               cp = Teclado.nextInt();
+               cp = teclado.nextInt();
 
                subt = cp*hb;
 
@@ -285,23 +284,22 @@ public class Restaurante
 
                
 
-               System.out.println("Su cuenta es:");
+               System.out.println("El detalle de su cuenta es:");
 
-               System.out.println("Subtotal = " + subt + " CoP");
+               System.out.println("Sub-total = " + subt + " Pesos");
 
-               System.out.println("Iva (19%) = " + imp + " CoP");
+               System.out.println("Impuesto (Iva 19%) = " + imp + " Pesos");
 
-               System.out.println("Precio total = " + tot + " CoP");
+               System.out.println("Precio total = " + tot + " Pesos");
 
-               System.out.println("Su descuento es 0% = " + tot*1 + " CoP");
+               System.out.println("Descuento por su elección del 0% = " + tot*1 + " Pesos");
 
-               System.out.println("El valor neto a pagar es = " + net + " CoP");
+               System.out.println("Gran total a pagar = " + net + " Pesos");
 
-               System.out.println("No tienes descuento, comete una ensalada");
-
+               
             } else {
 
-               System.out.println("No tenemos ese plato");
+               System.out.println("Por favor seleccione unicamente de las opciones dadas!");
 
             }
 
