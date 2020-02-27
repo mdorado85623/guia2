@@ -11,7 +11,7 @@ public class Restaurante
 {
    public static void main(String[] args)
    {
-    double sv=10000, ens=25000, jug=5000; 
+        double sv=10000, ens=25000, jug=5000; 
 
         double bc=30000, bp=28000;
 

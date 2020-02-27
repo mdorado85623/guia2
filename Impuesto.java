@@ -1,6 +1,7 @@
 import java.util.Scanner;
 /**
- * Programa para calcular el costo de uso de un colectivo de transporte de personal.
+ *  programa en Java, en la cual, a partir del precio bruto y el tipo de vehículo, encuentre el impuesto a pagar
+ *  y el precio neto (precio bruto más el impuesto).
  * 
  * @author Mario Esteban Dorado Sánchez 
  * @version Febrero 2020
@@ -8,27 +9,26 @@ import java.util.Scanner;
 public class Impuesto
 {
     public static void main(String[] args){
+        //Variables
+        
         double cam, aut, pbca, pbau;
 
         double ic=0, nc, iau=0, nau;
 
-        
-
         Scanner teclado = new Scanner (System.in);
-
         
-
-        System.out.println("¿Cúal es el precio bruto de la camioneta?");
+        //se solicita la información (precios de los vehículos)
+ 
+        System.out.println("¿Precio bruto de la Camioneta?");
 
         pbca = teclado.nextDouble();
 
         
-
-        System.out.println("¿Cúal es el precio bruto del vehículo?");
+        System.out.println("¿Precio bruto del Automóvil?");
 
         pbau = teclado.nextDouble();
 
-        
+        //operaciones y resultados
 
         if (pbca >= 0 && pbca < 80) {
 
@@ -36,9 +36,9 @@ public class Impuesto
 
             nc = pbca+ic;
 
-            System.out.println("El impuesto de la camioneta es $ " + ic);
+            System.out.println("El impuesto de la Camioneta es: " + ic + "Pesos");
 
-            System.out.println("El valor neto de la camioneta es de $ " + nc);
+            System.out.println("El valor neto de la Camioneta es: " + nc + "Pesos");
 
         } else if (pbca>=80) {
 
@@ -46,13 +46,13 @@ public class Impuesto
 
             nc = pbca+ic;
 
-            System.out.println("El impuesto de la camioneta es de $ " + ic);
+            System.out.println("El impuesto de la Camioneta es: " + ic + "Pesos");
 
-            System.out.println("El valor neto de la camioneta es de $ " + nc);
+            System.out.println("El valor neto de la Camioneta es: " + nc + "Pesos");
 
         } else {
 
-            System.out.println("no hagas trampa");
+            System.out.println("Algo está Mal!");
 
         }
 
@@ -64,9 +64,9 @@ public class Impuesto
 
             nau = pbau+iau;
 
-            System.out.println("El impuesto del automovil es $ " + iau);
+            System.out.println("El impuesto del Automóvil es: " + iau + "Pesos");
 
-            System.out.println("El valor neto del automovil es de $ " + nau);
+            System.out.println("El valor neto del Automóvil es: " + nau + "Pesos");
 
         } else if (pbau >= 20 && pbau <= 20) {
 
@@ -74,9 +74,9 @@ public class Impuesto
 
             nau = pbau+iau;
 
-            System.out.println("El impuesto del automovil es $ " + iau);
+            System.out.println("El impuesto del Automóvil es: " + iau + "Pesos");
 
-            System.out.println("El valor neto del automovil es de $ " + nau);
+            System.out.println("El valor neto del Automóvil es: " + nau + "Pesos");
 
         } else if (pbau > 40) {
 
@@ -84,13 +84,13 @@ public class Impuesto
 
             nau = pbau+iau;
 
-            System.out.println("El impuesto del automovil es $ " + iau);
+            System.out.println("El impuesto del Automóvil es: " + iau + "Pesos");
 
-            System.out.println("El valor neto del automovil es de $ " + nau);
+            System.out.println("El valor neto del Automóvil es: " + nau + "Pesos");
 
         }else {
 
-            System.out.println("no hagas trampa");
+            System.out.println("Algo está Mal!");
 
         }   
     }
